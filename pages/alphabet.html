@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learn Alphabets</title>
+  <link rel="stylesheet" href="../alphabet-style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔤 Learn Alphabets</h1>
+    <div class="alphabet-grid">
+      <!-- Alphabet Cards A-Z -->
+      <!-- Example -->
+      <div class="alphabet-card" onclick="playSound('A')">
+        <h2>A</h2>
+        <img src="../assets/images/apple.png" alt="Apple" />
+        <p>Apple</p>
+      </div>
+      <!-- Add more letters... -->
+    </div>
+    <a href="../index.html" class="back-btn">← Back to Dashboard</a>
+  </div>
+
+  <script>
+    function playSound(letter) {
+      let audio = new Audio(`../assets/sounds/${letter}.mp3`);
+      audio.play();
+    }
+  </script>
+</body>
+</html>

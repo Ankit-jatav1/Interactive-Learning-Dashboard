@@ -1,0 +1,36 @@
+.alphabet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .alphabet-card {
+    background-color: #d0f4de;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .alphabet-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .alphabet-card img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .back-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    text-decoration: none;
+    background: #ffafcc;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: #000;
+    font-weight: bold;
+  }
+  
